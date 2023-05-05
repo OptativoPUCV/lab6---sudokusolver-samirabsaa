@@ -77,3 +77,9 @@ sudoku.c:68:11: error: unused variable ‘array’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e3b319c
+Fri 05 May 2023 11:53:00 PM UTC: 
+ sudoku.c | 14 ++++++--------
+ 1 file changed, 6 insertions(+), 8 deletions(-)
+ tests:  0|5
+total_score: 0/70
+046be95

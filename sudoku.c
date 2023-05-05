@@ -64,9 +64,7 @@ int is_valid(Node* n){
   //FILAS SIN REPETIR 
   //recorrer filas y verificar que num de las filas no se repitan 
 
-  for(int i=0; i<0; i++){
-      int array[10] = {0}; 
-  }
+  
 
     
     return 1;
@@ -75,14 +73,14 @@ int is_valid(Node* n){
 
 List* get_adj_nodes(Node* n){
     List* list=createList();
-    int i, j;
+    
   
-    for(i=0; i<9;i++){
-      int num = 1; 
-      for(j=0; j<9;j++)
+    for(int i=0; i<9;i++){
+       
+      for(int j=0; j<9;j++)
         {
           if(n->sudo[i][j] == 0){
-            for(num = 1; num<10; num++){
+            for(int num = 0; num< 9; num++){
               n->sudo[i][j] = num; 
               if(is_valid(n)){
                 Node * ady = copy(n); 
