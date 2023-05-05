@@ -93,5 +93,5 @@ Node* DFS(Node* initial, int* cont){
   printf("iterations:%d\n",cont);
   print_node(final);
 
-  return 0;*/
-}
+  return 0;
+}*/
