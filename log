@@ -89,3 +89,17 @@ Fri 05 May 2023 11:53:14 PM UTC:
  tests:  2|4
 total_score: 15/70
 8023c2b
+Fri 05 May 2023 11:55:02 PM UTC: 
+ sudoku.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:70:11: error: unused variable ‘casillax’ [-Werror=unused-variable]
+   70 |       int casillax = n->sudo[i][j];
+      |           ^~~~~~~~
+sudoku.c:68:11: error: unused variable ‘array’ [-Werror=unused-variable]
+   68 |       int array[10] = {0};
+      |           ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ad3f296

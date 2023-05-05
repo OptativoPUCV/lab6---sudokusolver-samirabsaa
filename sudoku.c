@@ -64,7 +64,13 @@ int is_valid(Node* n){
   //FILAS SIN REPETIR 
   //recorrer filas y verificar que num de las filas no se repitan 
 
-  
+  for(int i=0; i<0; i++){
+      int array[10] = {0}; 
+    for(int j=0; j<9; j++){
+      int casillax = n->sudo[i][j];
+      
+    }
+  }
 
     
     return 1;
