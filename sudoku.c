@@ -64,7 +64,7 @@ int is_valid(Node* n){
   //FILAS SIN REPETIR 
   //recorrer matriz y verificar que num en las filas no se repitan 
 
-  for(int i=0; i<9; i++){
+  /*for(int i=0; i<9; i++){
       int array[10] = {0}; 
     for(int j=0; j<9; j++){
       int casillax = n->sudo[i][j];
@@ -73,11 +73,11 @@ int is_valid(Node* n){
         else return 0;  
       }
     }
-  }
+  }*/
 
   //COLUMNAS SIN REPETIR 
   //recorrer matriz y verificar que los números en las columnas no se repitan 
-    for(int i=0; i<9; i++){
+    /*for(int i=0; i<9; i++){
       int array[10] = {0}; 
       for(int j=0; j<9; j++){
         int casi = n->sudo[j][i];
@@ -86,12 +86,12 @@ int is_valid(Node* n){
           else return 0; 
         }
       }  
-    }
+    }*/
 
   //SUBMATRICES SIN REPETIR
   //recorrer y verificar que los números dentro de la matriz 3x3 no se repitan y sean del 1 al 9
 
-  for(int i = 0 ; i<3; i++ ){ //3 pq la matriz es de 3x3
+  /*for(int i = 0 ; i<3; i++ ){ //3 pq la matriz es de 3x3
     int array[10] = {0};  
     for(int j = 0; j<9; j++){ // 9 porque son 9 casillas dentro de la matriz
 
@@ -107,7 +107,7 @@ int is_valid(Node* n){
         else return 0;
       }    
     }
-  }
+  }*/
     
     return 1;
 }
