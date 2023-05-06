@@ -93,6 +93,20 @@ int is_valid(Node* n){
       
     }
   }
+
+  //SUBMATRICES SIN REPETIR
+  //recorrer y verificar que los números dentro de la matriz 3x3 no se repitan y sean del 1 al 9
+
+  for(int i = 0 ; i<3; i++ ){ //3 pq la matriz es de 3x3
+    int array[10] = {0}; 
+    int k=4; 
+    for(int j = 0; j<9; j++){ // 9 porque son 9 casillas dentro de la matriz
+      int z = 3*(k/3)+(j/3);
+      int t = j=3*(k%3)+(j%3);
+      
+      
+    }
+  }
   
 
    /*int k=4,p; 
