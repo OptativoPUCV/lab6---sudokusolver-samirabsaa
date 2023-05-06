@@ -69,13 +69,8 @@ int is_valid(Node* n){
     for(int j=0; j<9; j++){
       int casillax = n->sudo[i][j];
       if(casillax != 0){
-        if(array[casillax] == 0){
-          array[casillax] = 1; 
-        }
-        else{
-          return 0; 
-      }
-      
+        if(array[casillax] == 0) array[casillax] = 1; 
+        else return 0;  
     }
   }
 
@@ -86,13 +81,8 @@ int is_valid(Node* n){
     for(int j=0; j<9; j++){
       int casi = n->sudo[i][j];
       if(casi != 0){
-        if(array[casi] == 0){
-          array[casi] = 1; 
-        }
-        else{
-          return 0; 
-      }
-      
+        if(array[casi] == 0) array[casi] = 1; 
+        else return 0; 
     }
   }
 
@@ -112,12 +102,8 @@ int is_valid(Node* n){
 
       int mat = n->sudo[z][t]; 
       if(mat != 0){
-        if(array[mat] == 0){
-          array[mat] = 1;
-        }
-        else{
-          return 0;
-        }
+        if(array[mat] == 0) array[mat] = 1;
+        else return 0;
       }
 
       
