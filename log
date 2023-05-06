@@ -421,3 +421,14 @@ Sat 06 May 2023 12:32:42 AM UTC:
  tests:  0|5
 total_score: 0/70
 5496a7b
+Sat 06 May 2023 12:34:28 AM UTC: 
+ sudoku.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:120:11: error: unused variable ‘num’ [-Werror=unused-variable]
+  120 |       int num = 1;
+      |           ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+9c860e2
