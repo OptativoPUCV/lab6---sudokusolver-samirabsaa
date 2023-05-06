@@ -101,7 +101,7 @@ int is_valid(Node* n){
       //printf("%i", n->sudo[z][t]);
       //if(j%3 == 2) printf("\n");   
 
-      int mat = n->sudo[z][t]; 
+      int mat = n->sudo[t][z]; 
       if(mat != 0){
         if(array[mat] == 0) array[mat] = 1;
         else return 0;
