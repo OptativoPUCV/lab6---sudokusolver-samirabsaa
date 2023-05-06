@@ -97,8 +97,8 @@ int is_valid(Node* n){
       //función dada 
       int z = 3*(k/3)+(j/3);
       int t = j=3*(k%3)+(j%3);
-      printf("%i", n->sudo[z][t]);
-      if(j%3 == 2) printf("\n");   
+      //printf("%i", n->sudo[z][t]);
+      //if(j%3 == 2) printf("\n");   
 
       int mat = n->sudo[z][t]; 
       if(mat != 0){
@@ -147,7 +147,7 @@ Node* DFS(Node* initial, int* cont){
 }
 
 
-int main( int argc, char *argv[] ){
+/*int main( int argc, char *argv[] ){
 
   Node* initial= read_file("s12a.txt");;
 
@@ -157,4 +157,4 @@ int main( int argc, char *argv[] ){
   print_node(final);
 
   return 0;
-}
+}*/
