@@ -72,7 +72,8 @@ int is_valid(Node* n){
         if(array[casillax] == 0){
           array[casillax] = 1; 
         }
-        else return 0; 
+        else{
+          return 0; 
       }
       
     }
@@ -88,7 +89,8 @@ int is_valid(Node* n){
         if(array[casi] == 0){
           array[casi] = 1; 
         }
-        else return 0; 
+        else{
+          return 0; 
       }
       
     }
@@ -107,6 +109,16 @@ int is_valid(Node* n){
       int t = j=3*(k%3)+(j%3);
       //printf("%i", n->sudo[z][t]);
       //if(j%3 == 2) printf("\n");   
+
+      int mat = n->sudo[z][t]; 
+      if(mat != 0){
+        if(array[mat] == 0){
+          array[mat] = 1;
+        }
+        else{
+          return 1;
+        }
+      }
 
       
       
