@@ -138,3 +138,14 @@ sudoku.c:101:9: error: unused variable ‘array’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 daa456b
+Sat 06 May 2023 12:06:38 AM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:101:9: error: unused variable ‘array’ [-Werror=unused-variable]
+  101 |     int array[10] = {0};
+      |         ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7e31d38

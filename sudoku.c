@@ -103,6 +103,7 @@ int is_valid(Node* n){
     for(int j = 0; j<9; j++){ // 9 porque son 9 casillas dentro de la matriz
       int z = 3*(k/3)+(j/3);
       int t = j=3*(k%3)+(j%3);
+      printf("%i", n->sudo[z][t]);
       
       
     }
