@@ -120,7 +120,7 @@ List* get_adj_nodes(Node* n){
       int num = 1;
       for( j=0; j<9;j++){
          if(n->sudo[i][j] == 0){
-          for(int num = 1; num< 10; num++){
+          for(num = 1; num< 10; num++){
             n->sudo[i][j] = num; 
             if(is_valid(n)){
               Node * ady = copy(n); 
