@@ -104,22 +104,9 @@ int is_valid(Node* n){
       if(mat != 0){
         if(array[mat] == 0) array[mat] = 1;
         else return 0;
-      }
-
-      
-      
+      }    
     }
   }
-  
-
-   /*int k=4,p; 
-    for(p=0;p<9;p++){
-        int i=3*(k/3) + (p/3) ;
-        int j=3*(k%3) + (p%3) ;
-        printf("%d ",nodo->sudo[i][j]);
-        if(p%3 == 2) printf("\n");
-    }*/
-
     
     return 1;
 }
@@ -160,7 +147,7 @@ Node* DFS(Node* initial, int* cont){
 }
 
 
-int main( int argc, char *argv[] ){
+/*int main( int argc, char *argv[] ){
 
   Node* initial= read_file("s12a.txt");;
 
@@ -170,4 +157,4 @@ int main( int argc, char *argv[] ){
   print_node(final);
 
   return 0;
-}
+}*/
