@@ -80,7 +80,7 @@ int is_valid(Node* n){
     for(int i=0; i<0; i++){
       int array[10] = {0}; 
       for(int j=0; j<9; j++){
-        int casi = n->sudo[i][j];
+        int casi = n->sudo[j][i];
         if(casi != 0){
           if(array[casi] == 0) array[casi] = 1; 
           else return 0; 
