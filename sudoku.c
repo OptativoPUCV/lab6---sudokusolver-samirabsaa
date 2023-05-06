@@ -123,14 +123,12 @@ List* get_adj_nodes(Node* n){
           for(num = 1; num< 10; num++){
             n->sudo[i][j] = num; 
             if(is_valid(n)){
-              Node * ady = copy(n); 
-              //ady->sudo[i][j] = 
-              //ady->sudo[i][j]; 
+              Node * ady = copy(n);
               pushBack(list, ady);
             }
           }
-        n->sudo[i][j] = 0;
-        return list;
+        //n->sudo[i][j] = 0;
+        //return list;
         }
       }
     }
