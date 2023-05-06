@@ -116,7 +116,7 @@ int is_valid(Node* n){
           array[mat] = 1;
         }
         else{
-          return 1;
+          return 0;
         }
       }
 
