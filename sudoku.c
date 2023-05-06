@@ -78,13 +78,14 @@ int is_valid(Node* n){
   //recorrer matriz y verificar que los números en las columnas no se repitan 
     for(int i=0; i<0; i++){
       int array[10] = {0}; 
-    for(int j=0; j<9; j++){
-      int casi = n->sudo[i][j];
-      if(casi != 0){
-        if(array[casi] == 0) array[casi] = 1; 
-        else return 0; 
+      for(int j=0; j<9; j++){
+        int casi = n->sudo[i][j];
+        if(casi != 0){
+          if(array[casi] == 0) array[casi] = 1; 
+          else return 0; 
+        }
+      }  
     }
-  }
 
   //SUBMATRICES SIN REPETIR
   //recorrer y verificar que los números dentro de la matriz 3x3 no se repitan y sean del 1 al 9
