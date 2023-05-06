@@ -109,7 +109,9 @@ int is_valid(Node* n){
 
       int mat = n->sudo[t][z]; 
       if(mat != 0){
-        if(array[mat] == 0) array[mat] = 1;
+        if(array[mat] == 0){
+          array[mat] = 1;
+        }
         else return 0;
       }    
     }
