@@ -97,7 +97,7 @@ int is_valid(Node* n){
   //SUBMATRICES SIN REPETIR
   //recorrer y verificar que los números dentro de la matriz 3x3 no se repitan y sean del 1 al 9
 
-  for(int i = 0 ; i<3; i++ ){ //3 pq la matriz es de 3x3
+  for(int k = 0 ; k<3; k++ ){ //3 pq la matriz es de 3x3
     int array[10] = {0};  
     int k=4,p; 
     for(p=0;p<9;p++){
