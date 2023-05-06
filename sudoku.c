@@ -71,6 +71,7 @@ int is_valid(Node* n){
       if(casillax != 0){
         if(array[casillax] == 0) array[casillax] = 1; 
         else return 0;  
+      }
     }
   }
 
