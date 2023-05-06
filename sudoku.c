@@ -64,16 +64,22 @@ int is_valid(Node* n){
   //FILAS SIN REPETIR 
   //recorrer matriz y verificar que num en las filas no se repitan 
 
-  /*for(int i=0; i<9; i++){
-      int array[10] = {0}; 
+  for(int i=0; i < 9; i++){
+  
+      int array[10] = {0};
+      
     for(int j=0; j<9; j++){
+    
       int casillax = n->sudo[i][j];
+      
       if(casillax != 0){
-        if(array[casillax] == 0) array[casillax] = 1; 
+        if(array[casillax] == 0){
+          array[casillax] = 1; 
+        }
         else return 0;  
       }
     }
-  }*/
+  }
 
   //COLUMNAS SIN REPETIR 
   //recorrer matriz y verificar que los números en las columnas no se repitan 
