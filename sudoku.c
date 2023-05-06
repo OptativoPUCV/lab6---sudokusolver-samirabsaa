@@ -93,12 +93,12 @@ int is_valid(Node* n){
 
   for(int i = 0 ; i<3; i++ ){ //3 pq la matriz es de 3x3
     int array[10] = {0}; 
-    int k=4; 
+    //int k=4; 
     for(int j = 0; j<9; j++){ // 9 porque son 9 casillas dentro de la matriz
 
       //función dada 
-      int z = 3*(k/3)+(j/3);
-      int t = j=3*(k%3)+(j%3);
+      int z = 3*(i/3)+(i/3);
+      int t = j=3*(i%3)+(i%3);
       //printf("%i", n->sudo[z][t]);
       //if(j%3 == 2) printf("\n");   
 
