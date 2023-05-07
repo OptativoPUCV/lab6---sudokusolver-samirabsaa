@@ -158,7 +158,7 @@ Node* DFS(Node* initial, int* cont){
 
   Stack* s = createStack(); 
   //if(s == NULL)return NULL; 
-  (*cont) =1; 
+  //(*cont) =1; 
   //if() 
   push(s, initial); 
 
