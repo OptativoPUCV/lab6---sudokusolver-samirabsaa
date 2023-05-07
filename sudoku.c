@@ -164,7 +164,7 @@ Node* DFS(Node* initial, int* cont){
     pop(s); 
     //*cont = *cont-1;
     //(*cont)--; 
-    if(is_final(node)==1)return node; 
+    if(is_final(node))return node; 
 
     List* adyN = get_adj_nodes(node);
     if(adyN == NULL)return NULL; 
