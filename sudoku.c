@@ -171,14 +171,14 @@ Node* DFS(Node* initial, int* cont){
     Node * aux = first(adyN); 
     if(aux==NULL)return NULL; 
 
-    while(aux!=NULL){
+    while(aux){
       push(s,aux);
       aux= next(adyN); 
       //(*cont)++; 
       //*cont = *cont +1; 
     }
     (*cont)++; 
-    //free(node); 
+    free(node); 
   }
   //if(*cont == 0)return NULL;
   free(initial);
