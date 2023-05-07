@@ -155,7 +155,7 @@ int is_final(Node* n){
 Node* DFS(Node* initial, int* cont){
 
   //1crear stack S e insertar nodo 
-/*
+
   Stack* s = createStack(); 
   //if(s == NULL)return NULL; 
   //(*cont) =1; 
@@ -179,7 +179,7 @@ Node* DFS(Node* initial, int* cont){
       free(s); 
       return node; 
     }*/
-/*
+
     //OBTENER LISTA NODOD ADY
     List* adyNodes = get_adj_nodes(node); 
     /*if(adyNodes==NULL)
@@ -187,7 +187,7 @@ Node* DFS(Node* initial, int* cont){
       free(s);
       return NULL;
     }*/
-   /* Node* aux = first(adyNodes); 
+   /Node* aux = first(adyNodes); 
 
     while(aux != NULL){
       push(s, aux); 
@@ -200,7 +200,7 @@ Node* DFS(Node* initial, int* cont){
   //3 si se termina de recorrer el grafo sin encontrar solución return NULL
 
   //en la variable cont almacenar iteraciones que realiz allgoritmo
-  free(initial);*/
+  free(initial);
   return NULL;
 }
 
