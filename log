@@ -595,3 +595,15 @@ sudoku.c:183:7: error: value computed is not used [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 f755e3d
+Sun 07 May 2023 02:03:59 AM UTC: 
+ sudoku.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+test.c:245:5: error: redefinition of ‘main’
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+In file included from test.c:5:
+sudoku.c:196:5: note: previous definition of ‘main’ with type ‘int(int,  char **)’
+  196 | int main( int argc, char *argv[] ){
+      |     ^~~~
+Compilation failed
+a712c44
