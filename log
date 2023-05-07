@@ -841,3 +841,14 @@ sudoku.c:237:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 e00b2f5
+Sun 07 May 2023 03:41:36 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:236:10: error: returning ‘int (*)[9]’ from a function with incompatible return type ‘Node *’ [-Werror=incompatible-pointer-types]
+  236 |   return initial->sudo;
+      |          ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bcfb482

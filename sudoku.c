@@ -233,7 +233,7 @@ Node* DFS(Node* initial, int* cont){
 
   //en la variable cont almacenar iteraciones que realiz allgoritmo
   //free(initial);
-  return n->sudo;
+  return initial->sudo;
 }
 
 
