@@ -607,3 +607,17 @@ sudoku.c:196:5: note: previous definition of ‘main’ with type ‘int(int,  c
       |     ^~~~
 Compilation failed
 a712c44
+Sun 07 May 2023 02:12:35 AM UTC: 
+ sudoku.c | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:160:6: error: expected expression before ‘)’ token
+  160 |   if()
+      |      ^
+sudoku.c:161:3: error: statement with no effect [-Werror=unused-value]
+  161 |   *cont;
+      |   ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+67ea439

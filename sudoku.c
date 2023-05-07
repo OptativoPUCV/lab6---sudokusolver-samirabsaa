@@ -157,7 +157,8 @@ Node* DFS(Node* initial, int* cont){
   //1crear stack S e insertar nodo 
 
   Stack* s = createStack(); 
-  *cont = 1; 
+  if()
+  *cont; 
   push(s, initial); 
 
   //2while stack!=0
@@ -170,7 +171,7 @@ Node* DFS(Node* initial, int* cont){
   while(get_size(s) != 0){
     Node* node = top(s); //sacar primer nodo
     pop(s);  //eliminar primer nodo
-    *cont -= 1;
+    //*cont -= 1;
 
     if(is_final(node) == 1)return node; 
 
@@ -181,8 +182,9 @@ Node* DFS(Node* initial, int* cont){
     while(aux){
       push(s, aux); 
       aux = next(adyNodes); 
-      *cont += 1;
+      
     }
+    *cont += 1;
     free(node);  
   }
   //3 si se termina de recorrer el grafo sin encontrar solución return NULL
@@ -193,7 +195,7 @@ Node* DFS(Node* initial, int* cont){
 }
 
 
-int main( int argc, char *argv[] ){
+/*int main( int argc, char *argv[] ){
 
   Node* initial= read_file("s12a.txt");;
 
@@ -203,4 +205,4 @@ int main( int argc, char *argv[] ){
   print_node(final);
 
   return 0;
-}
+}*/
