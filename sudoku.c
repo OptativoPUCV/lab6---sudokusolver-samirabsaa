@@ -172,7 +172,7 @@ Node* DFS(Node* initial, int* cont){
   while((get_size(s)) != 0){
     Node* node = top(s); //sacar primer nodo
     pop(s);  //eliminar primer nodo
-    (*cont)--;
+    //(*cont)--;
 
     if((is_final(node))==1)return node; 
     /*{
