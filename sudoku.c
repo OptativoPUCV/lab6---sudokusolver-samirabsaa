@@ -149,11 +149,43 @@ int is_final(Node* n){
       if(n->sudo[i][j]==0)return 0; 
     }
   }
-  
     return 1;
 }
 
 Node* DFS(Node* initial, int* cont){
+
+  //1crear stack S e insertar nodo 
+
+  Stack* s = createStack(); 
+  *cont = 0; 
+  push(s, initial); 
+
+  //2while stack!=0
+  //sacar y eliminar el primer nodo de S 
+  //verificar if is_final -> retornar nodo
+  //obtener la lista de get_adj_nodes
+  //agregar los nodods de la lista 1 por 1 al stack 
+  //liberar memoria usada por el nodo
+  
+  while(get_size(s) != 0){
+    Node* node = top(s); //sacar primer nodo
+    pop(s);  //eliminar primer nodo
+
+    if(is_final(node) == 1)return n; 
+
+    //OBTENER LISTA NODOD ADY
+    List* adyNodes = get_adj_nodes(node); 
+    Node* aux = first(adyNodes); 
+
+    while(aux){
+      push(s, aux); 
+      aux = next(adyNodes); 
+    }
+    free(node);  
+  }
+  //3 si se termina de recorrer el grafo sin encontrar solución return NULL
+
+  //en la variable cont almacenar iteraciones que realiz allgoritmo
   return NULL;
 }
 
