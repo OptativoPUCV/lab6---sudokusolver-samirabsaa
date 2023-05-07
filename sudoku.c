@@ -154,6 +154,36 @@ int is_final(Node* n){
 
 Node* DFS(Node* initial, int* cont){
 
+  /*Stack *s = createStack(); 
+  //int contador=1; 
+  *cont = 1; 
+  push(s, initial); 
+
+  while((get_size(s))!=0){
+    Node* node = top(s); 
+    pop(s); 
+    //contador = contador
+    *cont = *cont-1;
+    //(*cont)--; 
+
+    if(is_final(node)==1)return node; 
+
+    List* adyN = get_adj_nodes(node); 
+    Node * aux = first(adyN); 
+
+    while(aux){
+      push(s,aux);
+      aux= next(adyN); 
+      //(*cont)++; 
+      *cont = *cont +1; 
+    }  
+    free(node); 
+  }*/
+  
+  
+
+
+  
   //1crear stack S e insertar nodo 
 
   //Stack* s = createStack(); 
