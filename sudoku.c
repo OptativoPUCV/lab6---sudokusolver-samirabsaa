@@ -157,8 +157,7 @@ Node* DFS(Node* initial, int* cont){
   //1crear stack S e insertar nodo 
 
   Stack* s = createStack(); 
-  if()
-  *cont; 
+  if() 
   push(s, initial); 
 
   //2while stack!=0
