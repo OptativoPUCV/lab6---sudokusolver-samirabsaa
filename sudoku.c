@@ -146,7 +146,7 @@ int is_final(Node* n){
   //retorna 0 en caso contrario 
   for(int i = 0; i<9; i++){
     for(int j=0; j<9; j++){
-      if(n->sudo[i][j]==0)return 0; 
+      if((n->sudo[i][j])==0)return 0; 
     }
   }
     return 1;
@@ -158,7 +158,7 @@ Node* DFS(Node* initial, int* cont){
 
   Stack* s = createStack(); 
   //if(s == NULL)return NULL; 
-  //(*cont) =1; 
+  (*cont) =1; 
   //if() 
   push(s, initial); 
 
@@ -172,31 +172,31 @@ Node* DFS(Node* initial, int* cont){
   while((get_size(s)) != 0){
     Node* node = top(s); //sacar primer nodo
     pop(s);  //eliminar primer nodo
-    //(*cont)--;
+    (*cont)--;
 
-    if((is_final(node)) == 1)return node; 
+    if((is_final(node))==1)return node; 
     /*{
       free(s); 
       return node; 
     }*/
 
     //OBTENER LISTA NODOD ADY
-    List* adyNodes = get_adj_nodes(node); 
+    //List* adyNodes = get_adj_nodes(node); 
     /*if(adyNodes==NULL)
     {
       free(s);
       return NULL;
     }*/
-   /Node* aux = first(adyNodes); 
+   //Node* aux = first(adyNodes); 
 
-    while(aux != NULL){
+    /*while(aux != NULL){
       push(s, aux); 
       aux = next(adyNodes); 
-      //(*cont)++;
+      (*cont)++;
     }
-    (*cont)++;
+    //(*cont)++;
     free(node);  
-  }
+  }*/
   //3 si se termina de recorrer el grafo sin encontrar solución return NULL
 
   //en la variable cont almacenar iteraciones que realiz allgoritmo
