@@ -157,7 +157,7 @@ Node* DFS(Node* initial, int* cont){
   //1crear stack S e insertar nodo 
 
   Stack* s = createStack(); 
-  *cont = 0; 
+  //*cont = 0; 
   push(s, initial); 
 
   //2while stack!=0
@@ -171,7 +171,7 @@ Node* DFS(Node* initial, int* cont){
     Node* node = top(s); //sacar primer nodo
     pop(s);  //eliminar primer nodo
 
-    if(is_final(node) == 1)return n; 
+    if(is_final(node) == 1)return node; 
 
     //OBTENER LISTA NODOD ADY
     List* adyNodes = get_adj_nodes(node); 
