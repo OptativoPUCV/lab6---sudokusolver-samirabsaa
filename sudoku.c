@@ -155,6 +155,7 @@ int is_final(Node* n){
 Node* DFS(Node* initial, int* cont){
 
   Stack *s = createStack();  
+  if(s==NULL)return NULL; 
   //*cont = 1; 
   push(s, initial); 
 
@@ -170,7 +171,7 @@ Node* DFS(Node* initial, int* cont){
     Node * aux = first(adyN); 
     if(aux==NULL)return NULL; 
 
-    while(aux){
+    while(aux!=NULL){
       push(s,aux);
       aux= next(adyN); 
       //(*cont)++; 
