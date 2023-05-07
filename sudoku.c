@@ -180,6 +180,7 @@ Node* DFS(Node* initial, int* cont){
     while(aux){
       push(s, aux); 
       aux = next(adyNodes); 
+      *cont++; 
     }
     free(node);  
   }
