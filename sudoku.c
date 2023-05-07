@@ -142,6 +142,15 @@ List* get_adj_nodes(Node* n){
 
 
 int is_final(Node* n){
+  //retorn 1 si el nodod corresponde a un nodo final (nros de la matriz distintos a 0)
+  //retorna 0 en caso contrario 
+  for(int i = 0; i<9; i++){
+    for(int j=0; j<9; j++){
+      if(n->sudo[i][j]!=0)return 1;
+      else return 0; 
+    }
+  }
+  
     return 0;
 }
 
