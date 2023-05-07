@@ -156,11 +156,11 @@ Node* DFS(Node* initial, int* cont){
 
   //1crear stack S e insertar nodo 
 
-  Stack* s = createStack(); 
+  //Stack* s = createStack(); 
   //if(s == NULL)return NULL; 
   //(*cont) =1; 
   //if() 
-  push(s, initial); 
+  //push(s, initial); 
 
   //2while stack!=0
   //sacar y eliminar el primer nodo de S 
@@ -169,12 +169,12 @@ Node* DFS(Node* initial, int* cont){
   //agregar los nodods de la lista 1 por 1 al stack 
   //liberar memoria usada por el nodo
   
-  while((get_size(s)) != 0){
-    Node* node = top(s); //sacar primer nodo
-    pop(s);  //eliminar primer nodo
+  //while((get_size(s)) != 0){
+    //Node* node = top(s); //sacar primer nodo
+    //pop(s);  //eliminar primer nodo
     //(*cont)--;
 
-    if((is_final(node))==1)return node; 
+    //if((is_final(node))==1)return node; 
     /*{
       free(s); 
       return node; 
@@ -189,18 +189,18 @@ Node* DFS(Node* initial, int* cont){
     }*/
    //Node* aux = first(adyNodes); 
 
-    /*while(aux != NULL){
-      push(s, aux); 
-      aux = next(adyNodes); 
-      (*cont)++;
-    }
+    //while(aux != NULL){
+      //push(s, aux); 
+      //aux = next(adyNodes); 
+      //(*cont)++;
+    //}
     //(*cont)++;
-    free(node);  
-  }*/
+    //free(node);  
+  //}
   //3 si se termina de recorrer el grafo sin encontrar solución return NULL
 
   //en la variable cont almacenar iteraciones que realiz allgoritmo
-  free(initial);
+  //free(initial);
   return NULL;
 }
 
