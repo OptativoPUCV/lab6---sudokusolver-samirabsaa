@@ -83,7 +83,7 @@ int is_valid(Node* n){
 
   //COLUMNAS SIN REPETIR 
   //recorrer matriz y verificar que los números en las columnas no se repitan 
-    /*for(int i=0; i<9; i++){
+    for(int i=0; i<9; i++){
       int array[10] = {0}; 
       for(int j=0; j<9; j++){
         int casi = n->sudo[j][i];
@@ -170,6 +170,7 @@ List* get_adj_nodes(Node* n){
             }
           }
           n->sudo[i][j]=0;
+           return list;
         }
       }
     }
