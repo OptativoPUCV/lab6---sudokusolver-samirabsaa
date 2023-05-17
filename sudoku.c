@@ -97,7 +97,7 @@ int is_valid(Node* n){
   //SUBMATRICES SIN REPETIR
   //recorrer y verificar que los números dentro de la matriz 3x3 no se repitan y sean del 1 al 9
 
-  /*for(int k = 0 ; k<3; k++ ){ //3 pq la matriz es de 3x3
+  for(int k = 0 ; k<3; k++ ){ //3 pq la matriz es de 3x3
     int array[10] = {0};  
     for(int p=0;p<9;p++){
         int i=3*(k/3) + (p/3) ;
@@ -114,9 +114,9 @@ int is_valid(Node* n){
         else return 0;
       }    
     }
-  }*/
+  }
 
-    int i,j,k,l,ii;
+    /*int i,j,k,l,ii;
 
     //squares
     for(k=0;k<9;k++){
@@ -129,7 +129,7 @@ int is_valid(Node* n){
        }
     }
 
-    return 1;
+    return 1;*/
 
 
     
