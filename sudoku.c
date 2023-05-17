@@ -50,13 +50,13 @@ int is_valid(Node* n){
 
 //Si el estado es válido la función retorna 1, si no lo es retorna 0.
 
-   int k=4,p; 
+   /*int k=4,p; 
     for(p=0;p<9;p++){
         int i=3*(k/3) + (p/3) ;
         int j=3*(k%3) + (p%3) ;
         printf("%d ",nodo->sudo[i][j]);
         if(p%3 == 2) printf("\n");
-    }
+    }*/
 
   /*Para marcar los números que vayan apareciendo en una fila/columna/submatriz puede usar un arreglo de enteros de largo 10 inicializado con 0s. Cada vez que aparezca un número i, verifique que la casilla i del arreglo sea igual a 0, luego márquela con un '1'. Si la casilla es '1' quiere decir que el número ya estaba marcado por lo que la fla/columna/submatriz no es válida.
 */
