@@ -156,14 +156,14 @@ Node* DFS(Node* initial, int* cont){
 
   Stack *s = createStack();  
   if(s==NULL)return NULL; 
-  //*cont = 1; 
+  *cont = 1; 
   push(s, initial); 
 
   while(get_size(s)!=0){
     Node* node = top(s); 
     pop(s); 
-    //*cont = *cont-1;
-    //(*cont)--; 
+    *cont = *cont-1;
+    (*cont)--; 
     if(is_final(node)==1)return node; 
 
     List* adyN = get_adj_nodes(node);
@@ -174,17 +174,14 @@ Node* DFS(Node* initial, int* cont){
     while(aux!=NULL){
       push(s,aux);
       aux= next(adyN); 
-      //(*cont)++; 
-      //*cont = *cont +1; 
+      (*cont)++; 
+      *cont = *cont +1; 
     }
     (*cont)++; 
     free(node); 
   }
   if(*cont == 0)return NULL;
   free(initial);
-  
-
-
   
   //1crear stack S e insertar nodo 
 
