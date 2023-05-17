@@ -948,3 +948,14 @@ sudoku.c:122:12: error: variable ‘b’ set but not used [-Werror=unused-but-se
 cc1: all warnings being treated as errors
 Compilation failed
 6cd199e
+Wed 17 May 2023 03:43:57 PM UTC: 
+ sudoku.c | 32 +++++++++++++++++++++++++++-----
+ 1 file changed, 27 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:86:5: error: "/*" within comment [-Werror=comment]
+   86 |     /*for(int i=0; i<9; i++){
+      |      
+cc1: all warnings being treated as errors
+Compilation failed
+28fc0bd

@@ -64,7 +64,7 @@ int is_valid(Node* n){
   //FILAS SIN REPETIR 
   //recorrer matriz y verificar que num en las filas no se repitan 
 
-  for(int i=0; i < 9; i++){
+  /*for(int i=0; i < 9; i++){
   
       int array[10] = {0};
       
@@ -83,7 +83,7 @@ int is_valid(Node* n){
 
   //COLUMNAS SIN REPETIR 
   //recorrer matriz y verificar que los números en las columnas no se repitan 
-    for(int i=0; i<9; i++){
+    /*for(int i=0; i<9; i++){
       int array[10] = {0}; 
       for(int j=0; j<9; j++){
         int casi = n->sudo[j][i];
@@ -97,7 +97,7 @@ int is_valid(Node* n){
   //SUBMATRICES SIN REPETIR
   //recorrer y verificar que los números dentro de la matriz 3x3 no se repitan y sean del 1 al 9
 
-  /*for(int k = 0 ; k<3; k++ ){ //3 pq la matriz es de 3x3
+  for(int k = 0 ; k<3; k++ ){ //3 pq la matriz es de 3x3
     int array[10] = {0};  
     for(int p=0;p<9;p++){
         int i=3*(k/3) + (p/3) ;
@@ -116,10 +116,29 @@ int is_valid(Node* n){
     }
   }*/
 
+    int i,j,k,l,ii;
+
+    //rows
+    for(i=0;i<9;i++){
+       int b[10]; for(ii=1;ii<10;ii++) b[ii]=0;
+       for(j=0;j<9;j++){
+         if( n->sudo[i][j]!= 0 && b[n->sudo[i][j]]==1) return 0;
+         b[n->sudo[i][j]]=1;
+       }
+    }
+
+    //cols
+    for(j=0;j<9;j++){
+       int b[10]; for(ii=1;ii<10;ii++) b[ii]=0;
+       for(i=0;i<9;i++){
+         if( n->sudo[i][j]!= 0 && b[n->sudo[i][j]]==1) return 0;
+         b[n->sudo[i][j]]=1;
+       }
+    }
 
     //squares
-    for(int k=0;k<9;k++){
-       int b[10]; for(int ii=1;ii<10;ii++) b[ii]=0;
+    for(k=0;k<9;k++){
+       int b[10]; for(ii=1;ii<10;ii++) b[ii]=0;
        for(l=0;l<9;l++){
            i=3*(k%3) + (l%3) ;
            j=3*(k/3) + (l/3) ;
@@ -127,6 +146,9 @@ int is_valid(Node* n){
          b[n->sudo[i][j]]=1;
        }
     }
+
+    return 1;
+
 
     
     return 1;
