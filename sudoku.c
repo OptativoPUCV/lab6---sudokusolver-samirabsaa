@@ -97,7 +97,7 @@ int is_valid(Node* n){
   //SUBMATRICES SIN REPETIR
   //recorrer y verificar que los números dentro de la matriz 3x3 no se repitan y sean del 1 al 9
 
-  for(int k = 0 ; k<3; k++ ){ //3 pq la matriz es de 3x3
+  /*for(int k = 0 ; k<3; k++ ){ //3 pq la matriz es de 3x3
     int array[10] = {0};  
     for(int p=0;p<9;p++){
         int i=3*(k/3) + (p/3) ;
@@ -114,7 +114,20 @@ int is_valid(Node* n){
         else return 0;
       }    
     }
-  }
+  }*/
+
+
+    //squares
+    for(k=0;k<9;k++){
+       int b[10]; for(ii=1;ii<10;ii++) b[ii]=0;
+       for(l=0;l<9;l++){
+           i=3*(k%3) + (l%3) ;
+           j=3*(k/3) + (l/3) ;
+         if( n->sudo[i][j]!= 0 && b[n->sudo[i][j]]==1) return 0;
+         b[n->sudo[i][j]]=1;
+       }
+    }
+
     
     return 1;
 }
@@ -134,6 +147,7 @@ List* get_adj_nodes(Node* n){
               pushBack(list, ady);
             }
           }
+          n->sudo[i][j]=0;
         }
       }
     }
@@ -170,7 +184,7 @@ Node* DFS(Node* initial, int* cont){
     //if(adyN == NULL)return NULL; 
     
     Node * aux = first(adyN); 
-    if(aux==NULL)return NULL; 
+    //if(aux==NULL)return NULL; 
 
     while(aux!=NULL){
       push(s,aux);
@@ -181,7 +195,7 @@ Node* DFS(Node* initial, int* cont){
     (*cont)++; 
     free(node); 
   }
-  if(*cont == 0)return NULL;
+  if(*cont == 0) return NULL;
   free(initial);
   
   //1crear stack S e insertar nodo 
