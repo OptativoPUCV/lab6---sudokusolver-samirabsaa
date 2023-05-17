@@ -119,7 +119,7 @@ int is_valid(Node* n){
 
     //squares
     for(int k=0;k<9;k++){
-       int b[10]; for(ii=1;ii<10;ii++) b[ii]=0;
+       int b[10]; for(int ii=1;ii<10;ii++) b[ii]=0;
        for(l=0;l<9;l++){
            i=3*(k%3) + (l%3) ;
            j=3*(k/3) + (l/3) ;
