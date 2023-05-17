@@ -50,13 +50,13 @@ int is_valid(Node* n){
 
 //Si el estado es válido la función retorna 1, si no lo es retorna 0.
 
-   /*int k=4,p; 
+   int k=4,p; 
     for(p=0;p<9;p++){
         int i=3*(k/3) + (p/3) ;
         int j=3*(k%3) + (p%3) ;
         printf("%d ",nodo->sudo[i][j]);
         if(p%3 == 2) printf("\n");
-    }*/
+    }
 
   /*Para marcar los números que vayan apareciendo en una fila/columna/submatriz puede usar un arreglo de enteros de largo 10 inicializado con 0s. Cada vez que aparezca un número i, verifique que la casilla i del arreglo sea igual a 0, luego márquela con un '1'. Si la casilla es '1' quiere decir que el número ya estaba marcado por lo que la fla/columna/submatriz no es válida.
 */
@@ -64,7 +64,7 @@ int is_valid(Node* n){
   //FILAS SIN REPETIR 
   //recorrer matriz y verificar que num en las filas no se repitan 
 
-  /*for(int i=0; i < 9; i++){
+  for(int i=0; i < 9; i++){
   
       int array[10] = {0};
       
@@ -97,7 +97,7 @@ int is_valid(Node* n){
   //SUBMATRICES SIN REPETIR
   //recorrer y verificar que los números dentro de la matriz 3x3 no se repitan y sean del 1 al 9
 
-  for(int k = 0 ; k<3; k++ ){ //3 pq la matriz es de 3x3
+  /*for(int k = 0 ; k<3; k++ ){ //3 pq la matriz es de 3x3
     int array[10] = {0};  
     for(int p=0;p<9;p++){
         int i=3*(k/3) + (p/3) ;
@@ -117,24 +117,6 @@ int is_valid(Node* n){
   }*/
 
     int i,j,k,l,ii;
-
-    //rows
-    for(i=0;i<9;i++){
-       int b[10]; for(ii=1;ii<10;ii++) b[ii]=0;
-       for(j=0;j<9;j++){
-         if( n->sudo[i][j]!= 0 && b[n->sudo[i][j]]==1) return 0;
-         b[n->sudo[i][j]]=1;
-       }
-    }
-
-    //cols
-    for(j=0;j<9;j++){
-       int b[10]; for(ii=1;ii<10;ii++) b[ii]=0;
-       for(i=0;i<9;i++){
-         if( n->sudo[i][j]!= 0 && b[n->sudo[i][j]]==1) return 0;
-         b[n->sudo[i][j]]=1;
-       }
-    }
 
     //squares
     for(k=0;k<9;k++){
