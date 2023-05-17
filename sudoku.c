@@ -116,7 +116,7 @@ int is_valid(Node* n){
     }
   }*/
 
-    int i,j,l,ii;
+    int i,j,k,l,ii;
 
     //squares
     for(k=0;k<9;k++){
