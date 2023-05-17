@@ -167,7 +167,8 @@ Node* DFS(Node* initial, int* cont){
     if(is_final(node)==1)return node; 
 
     List* adyN = get_adj_nodes(node);
-    if(adyN == NULL)return NULL; 
+    //if(adyN == NULL)return NULL; 
+    
     Node * aux = first(adyN); 
     if(aux==NULL)return NULL; 
 
