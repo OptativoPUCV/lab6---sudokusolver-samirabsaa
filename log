@@ -903,3 +903,27 @@ sudoku.c:122:12: error: variable ‘b’ set but not used [-Werror=unused-but-se
 cc1: all warnings being treated as errors
 Compilation failed
 a313a15
+Wed 17 May 2023 03:41:22 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:122:23: error: ‘ii’ undeclared (first use in this function)
+  122 |        int b[10]; for(ii=1;ii<10;ii++) b[ii]=0;
+      |                       ^~
+sudoku.c:122:23: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:123:12: error: ‘l’ undeclared (first use in this function)
+  123 |        for(l=0;l<9;l++){
+      |            ^
+sudoku.c:124:12: error: ‘i’ undeclared (first use in this function)
+  124 |            i=3*(k%3) + (l%3) ;
+      |            ^
+sudoku.c:125:12: error: ‘j’ undeclared (first use in this function)
+  125 |            j=3*(k/3) + (l/3) ;
+      |            ^
+sudoku.c:122:12: error: variable ‘b’ set but not used [-Werror=unused-but-set-variable]
+  122 |        int b[10]; for(ii=1;ii<10;ii++) b[ii]=0;
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+62a707b
